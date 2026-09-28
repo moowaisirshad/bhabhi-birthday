@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#12070d">
+<meta name="description" content="A special birthday celebration for Bhabhi">
+
+<title>Happy Birthday Bhabhi ✨</title>
+
+<!-- Elegant Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#10070c;
+    color:#f8ead9;
+    font-family:"Montserrat",sans-serif;
+    overflow-x:hidden;
+}
+
+/* =========================
+   BACKGROUND
+========================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(163,91,101,.18),transparent 30%),
+        radial-gradient(circle at 80% 70%,rgba(190,145,76,.12),transparent 30%),
+        radial-gradient(circle at 50% 100%,rgba(100,25,48,.28),transparent 40%);
+    z-index:-3;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.035;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    z-index:-2;
+}
+
+/* =========================
+   PARTICLES
+========================= */
+
+.particle{
+    position:fixed;
+    width:3px;
+    height:3px;
+    background:#e6c98a;
+    border-radius:50%;
+    opacity:.6;
+    pointer-events:none;
+    animation:floatParticle linear infinite;
+    z-index:0;
+}
+
+@keyframes floatParticle{
+    0%{
+        transform:translateY(110vh) scale(.5);
+        opacity:0;
+    }
+
+    20%{
+        opacity:.7;
+    }
+
+    80%{
+        opacity:.5;
+    }
+
+    100%{
+        transform:translateY(-10vh) scale(1.4);
+        opacity:0;
+    }
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.page{
+    position:relative;
+    z-index:2;
+    width:100%;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:35px 20px;
+    position:relative;
+}
+
+.hero-inner{
+    width:100%;
+    max-width:1050px;
+    text-align:center;
+    position:relative;
+}
+
+/* Gold line */
+
+.gold-line{
+    width:90px;
+    height:1px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #d9b46c,
+        transparent
+    );
+    margin:20px auto;
+}
+
+/* Small heading */
+
+.eyebrow{
+    font-size:11px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:#d5b879;
+    font-weight:500;
+    animation:fadeUp 1.2s ease both;
+}
+
+/* Crown */
+
+.crown{
+    font-size:42px;
+    margin-bottom:10px;
+    filter:drop-shadow(0 0 15px rgba(221,186,105,.3));
+    animation:crownFloat 3s ease-in-out infinite;
+}
+
+@keyframes crownFloat{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-7px);
+    }
+}
+
+/* Main heading */
+
+.hero h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(70px,12vw,145px);
+    line-height:.78;
+    font-weight:500;
+    letter-spacing:-4px;
+    color:#f5dfb2;
+    text-shadow:
+        0 0 30px rgba(214,176,96,.13),
+        0 15px 40px rgba(0,0,0,.4);
+    animation:fadeUp 1.3s .2s ease both;
+}
+
+.hero h1 span{
+    display:block;
+    font-family:"Playfair Display",serif;
+    font-style:italic;
+    font-size:.48em;
+    letter-spacing:1px;
+    color:#c994a4;
+    margin-top:20px;
+}
+
+/* Subtitle */
+
+.hero-subtitle{
+    max-width:600px;
+    margin:35px auto 0;
+    color:#d9c9c0;
+    font-size:14px;
+    line-height:2;
+    letter-spacing:1px;
+    animation:fadeUp 1.3s .4s ease both;
+}
+
+/* Scroll */
+
+.scroll{
+    position:absolute;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    color:#a98e78;
+    font-size:9px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    animation:bounce 2s infinite;
+}
+
+.scroll::after{
+    content:"";
+    display:block;
+    width:1px;
+    height:35px;
+    margin:10px auto 0;
+    background:linear-gradient(#b99a63,transparent);
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateX(-50%) translateY(0);
+    }
+
+    50%{
+        transform:translateX(-50%) translateY(7px);
+    }
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+    max-width:900px;
+    margin:auto;
+    padding:100px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title .mini{
+    font-size:10px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:#bd9b61;
+    margin-bottom:15px;
+}
+
+.section-title h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:58px;
+    font-weight:500;
+    color:#f0d9ad;
+}
+
+.section-title h2 em{
+    color:#c18b9a;
+}
+
+/* =========================
+   GLASS MESSAGE
+========================= */
+
+.glass{
+    position:relative;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.075),
+            rgba(255,255,255,.025)
+        );
+    border:1px solid rgba(222,190,124,.22);
+    border-radius:30px;
+    padding:55px 45px;
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.08);
+    overflow:hidden;
+}
+
+.glass::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    top:-100px;
+    right:-80px;
+    border-radius:50%;
+    background:rgba(207,163,88,.08);
+    filter:blur(30px);
+}
+
+.message{
+    text-align:center;
+}
+
+.message .quote{
+    font-family:"Cormorant Garamond",serif;
+    font-size:28px;
+    line-height:1.8;
+    color:#ead7c4;
+}
+
+.message .quote strong{
+    color:#e2bd72;
+    font-weight:600;
+}
+
+.message .dua{
+    margin-top:30px;
+    font-family:"Playfair Display",serif;
+    font-style:italic;
+    font-size:17px;
+    line-height:2;
+    color:#cdb9ad;
+}
+
+/* =========================
+   COUPLE CARDS
+========================= */
+
+.couple-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.lux-card{
+    padding:38px 28px;
+    text-align:center;
+    border:1px solid rgba(221,187,116,.18);
+    border-radius:25px;
+    background:rgba(255,255,255,.035);
+    transition:.4s ease;
+}
+
+.lux-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(221,187,116,.45);
+    background:rgba(255,255,255,.06);
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
+}
+
+.lux-icon{
+    font-size:35px;
+    margin-bottom:18px;
+}
+
+.lux-card h3{
+    font-family:"Cormorant Garamond",serif;
+    font-size:30px;
+    color:#e7c985;
+    margin-bottom:12px;
+}
+
+.lux-card p{
+    font-size:13px;
+    line-height:1.9;
+    color:#bdaaa2;
+}
+
+/* =========================
+   SPECIAL MESSAGE
+========================= */
+
+.special{
+    text-align:center;
+}
+
+.special-box{
+    padding:60px 35px;
+    border-radius:30px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(105,31,52,.38),
+            rgba(35,13,21,.7)
+        );
+    border:1px solid rgba(214,172,91,.28);
+    position:relative;
+    overflow:hidden;
+}
+
+.special-box::before,
+.special-box::after{
+    content:"✦";
+    position:absolute;
+    color:#d7b36b;
+    font-size:20px;
+    opacity:.6;
+}
+
+.special-box::before{
+    top:20px;
+    left:25px;
+}
+
+.special-box::after{
+    bottom:20px;
+    right:25px;
+}
+
+.special-box h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:52px;
+    font-weight:500;
+    color:#f0d39a;
+    margin-bottom:25px;
+}
+
+.special-box p{
+    max-width:650px;
+    margin:auto;
+    font-family:"Playfair Display",serif;
+    font-size:18px;
+    line-height:2;
+    color:#d6c3b9;
+}
+
+.highlight{
+    display:block;
+    margin-top:20px;
+    color:#e2b86d;
+    font-weight:500;
+}
+
+/* =========================
+   SURPRISE BUTTON
+========================= */
+
+.surprise-area{
+    text-align:center;
+    padding-top:40px;
+}
+
+.gold-btn{
+    position:relative;
+    padding:17px 35px;
+    border-radius:50px;
+    border:1px solid rgba(229,194,120,.55);
+    background:linear-gradient(
+        135deg,
+        #9b6c35,
+        #d8b46c,
+        #9b6c35
+    );
+    color:#1c0e11;
+    font-family:"Montserrat",sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    cursor:pointer;
+    box-shadow:
+        0 10px 35px rgba(202,157,76,.2);
+    transition:.4s;
+}
+
+.gold-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:
+        0 15px 45px rgba(202,157,76,.35);
+}
+
+/* =========================
+   HIDDEN REVEAL
+========================= */
+
+.reveal{
+    display:none;
+    margin-top:30px;
+    animation:reveal .8s ease both;
+}
+
+.reveal.active{
+    display:block;
+}
+
+@keyframes reveal{
+    from{
+        opacity:0;
+        transform:translateY(20px) scale(.97);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+.reveal-inner{
+    padding:45px 30px;
+    border:1px solid rgba(220,185,113,.2);
+    border-radius:25px;
+    background:rgba(255,255,255,.035);
+}
+
+.reveal-inner .big-heart{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.reveal-inner h3{
+    font-family:"Cormorant Garamond",serif;
+    font-size:40px;
+    color:#e8cb8d;
+    margin-bottom:15px;
+}
+
+.reveal-inner p{
+    color:#cdbbb1;
+    line-height:1.9;
+    font-size:14px;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.final{
+    text-align:center;
+    padding:100px 20px 60px;
+}
+
+.final-symbol{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.final h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:58px;
+    font-weight:500;
+    color:#edcf92;
+}
+
+.final p{
+    margin-top:15px;
+    color:#a9938c;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:30px 20px 45px;
+    color:#75615f;
+    font-size:9px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    .hero{
+        min-height:100vh;
+        padding:25px 16px;
+    }
+
+    .eyebrow{
+        font-size:8px;
+        letter-spacing:4px;
+    }
+
+    .hero h1{
+        font-size:68px;
+        letter-spacing:-2px;
+    }
+
+    .hero h1 span{
+        font-size:32px;
+        margin-top:14px;
+    }
+
+    .hero-subtitle{
+        font-size:12px;
+        line-height:1.9;
+        padding:0 15px;
+    }
+
+    .section{
+        padding:75px 16px;
+    }
+
+    .section-title h2{
+        font-size:45px;
+    }
+
+    .glass{
+        padding:38px 22px;
+        border-radius:25px;
+    }
+
+    .message .quote{
+        font-size:22px;
+        line-height:1.7;
+    }
+
+    .message .dua{
+        font-size:14px;
+    }
+
+    .couple-grid{
+        grid-template-columns:1fr;
+    }
+
+    .special-box{
+        padding:45px 22px;
+    }
+
+    .special-box h2{
+        font-size:43px;
+    }
+
+    .special-box p{
+        font-size:15px;
+    }
+
+    .final h2{
+        font-size:45px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Particles -->
+<div class="particle" style="left:5%;animation-duration:10s;animation-delay:0s;"></div>
+<div class="particle" style="left:12%;animation-duration:13s;animation-delay:2s;"></div>
+<div class="particle" style="left:23%;animation-duration:9s;animation-delay:4s;"></div>
+<div class="particle" style="left:35%;animation-duration:12s;animation-delay:1s;"></div>
+<div class="particle" style="left:47%;animation-duration:10s;animation-delay:5s;"></div>
+<div class="particle" style="left:58%;animation-duration:14s;animation-delay:3s;"></div>
+<div class="particle" style="left:69%;animation-duration:11s;animation-delay:6s;"></div>
+<div class="particle" style="left:81%;animation-duration:9s;animation-delay:2s;"></div>
+<div class="particle" style="left:92%;animation-duration:13s;animation-delay:5s;"></div>
+
+
+<div class="page">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div class="crown">♕</div>
+
+<div class="eyebrow">
+A Little Celebration Of You
+</div>
+
+<div class="gold-line"></div>
+
+<h1>
+Happy Birthday
+<span>Bhabhi</span>
+</h1>
+
+<p class="hero-subtitle">
+Today is a beautiful reminder to celebrate
+the wonderful person you are.
+</p>
+
+<div class="gold-line"></div>
+
+<div class="scroll">
+Scroll To Discover
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WISH
+========================= -->
+
+<section class="section">
+
+<div class="section-title">
+
+<div class="mini">
+With Love & Duas
+</div>
+
+<h2>
+A Special <em>Wish</em>
+</h2>
+
+</div>
+
+<div class="glass message">
+
+<p class="quote">
+
+“Some people become a beautiful part of
+our family not just through relationships,
+but through the happiness they bring.”
+
+<br><br>
+
+<strong>
+Happy Birthday, Bhabhi. ❤️
+</strong>
+
+</p>
+
+<div class="gold-line"></div>
+
+<p class="dua">
+
+May Allah bless you with happiness,
+peace, good health and countless beautiful
+moments.
+
+May every new year of your life bring
+you closer to everything your heart wishes for.
+
+<strong>Ameen. 🤲</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     COUPLE
+========================= -->
+
+<section class="section">
+
+<div class="section-title">
+
+<div class="mini">
+A Beautiful Bond
+</div>
+
+<h2>
+For You <em>Both</em>
+</h2>
+
+</div>
+
+<div class="couple-grid">
+
+<div class="lux-card">
+
+<div class="lux-icon">♡</div>
+
+<h3>For Bhabhi</h3>
+
+<p>
+Hamesha muskurati rahiye,
+khush rahiye aur apni positivity
+se ghar ko yunhi roshan karti rahiye.
+</p>
+
+</div>
+
+<div class="lux-card">
+
+<div class="lux-icon">♾</div>
+
+<h3>For Both</h3>
+
+<p>
+Aap dono ke beech hamesha
+pyaar, respect, understanding
+aur khushiyan bani rahein.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SPECIAL MESSAGE
+========================= -->
+
+<section class="section special">
+
+<div class="special-box">
+
+<div class="mini">
+A Message From The Heart
+</div>
+
+<h2>
+One Special Request ❤️
+</h2>
+
+<p>
+
+Bhabhi, birthday par ek chhoti si request hai...
+
+<br><br>
+
+<strong>
+Mere Bhai ko hamesha khush rakhna,
+aur khud bhi hamesha khush rehna.
+</strong>
+
+<span class="highlight">
+Aap dono ki jodi hamesha isi tarah
+khubsurat, strong aur blessed rahe. ✨
+</span>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SURPRISE
+========================= -->
+
+<section class="section">
+
+<div class="section-title">
+
+<div class="mini">
+There Is More
+</div>
+
+<h2>
+A Little <em>Surprise</em>
+</h2>
+
+</div>
+
+<div class="surprise-area">
+
+<button class="gold-btn" onclick="openSurprise()">
+Open Your Message
+</button>
+
+<div class="reveal" id="reveal">
+
+<div class="reveal-inner">
+
+<div class="big-heart">
+💗
+</div>
+
+<h3>
+Dear Bhabhi...
+</h3>
+
+<p>
+
+Aapko birthday ki bahut bahut mubarakbaad.
+
+Allah aapki zindagi ko khushiyon,
+sukoon aur mohabbat se bhar de.
+
+Aapke chehre ki smile hamesha aisi hi rahe
+aur aapki har dua qubool ho.
+
+<br><br>
+
+Aur mere bhai ke saath milkar
+zindagi ke har moment ko khubsurat banate rahiye.
+
+<br><br>
+
+<strong style="color:#e1bd76;">
+Happy Birthday Once Again, Bhabhi! 🎂✨
+</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="final">
+
+<div class="final-symbol">
+✦
+</div>
+
+<h2>
+Stay Blessed. Stay Happy.
+</h2>
+
+<p>
+With lots of love & duas ❤️
+</p>
+
+</section>
+
+
+<footer>
+Made especially for Bhabhi • With Love
+</footer>
+
+</div>
+
+
+<script>
+
+/* =========================
+   SURPRISE REVEAL
+========================= */
+
+function openSurprise(){
+
+    const reveal = document.getElementById("reveal");
+    const button = document.querySelector(".gold-btn");
+
+    reveal.classList.add("active");
+
+    button.innerHTML = "Message Opened ✦";
+
+    button.style.opacity = "0.75";
+
+    /* Celebration particles */
+
+    for(let i = 0; i < 35; i++){
+
+        const p = document.createElement("div");
+
+        p.innerHTML = ["✦","♡","♥","✨","·"][Math.floor(Math.random()*5)];
+
+        p.style.position = "fixed";
+        p.style.left = Math.random()*100 + "%";
+        p.style.bottom = "-30px";
+        p.style.color = Math.random() > .5 ? "#e0bd75" : "#c18b9a";
+        p.style.fontSize = (10 + Math.random()*20) + "px";
+        p.style.zIndex = "9999";
+        p.style.pointerEvents = "none";
+
+        p.animate(
+            [
+                {
+                    transform:"translateY(0) rotate(0deg)",
+                    opacity:0
+                },
+                {
+                    transform:"translateY(-45vh) rotate(180deg)",
+                    opacity:1
+                },
+                {
+                    transform:"translateY(-100vh) rotate(360deg)",
+                    opacity:0
+                }
+            ],
+            {
+                duration:3500 + Math.random()*2500,
+                easing:"ease-out"
+            }
+        );
+
+        document.body.appendChild(p);
+
+        setTimeout(()=>{
+            p.remove();
+        },6000);
+    }
+
+}
+
+
+/* =========================
+   CREATE EXTRA PARTICLES
+========================= */
+
+for(let i=0;i<18;i++){
+
+    const p = document.createElement("div");
+
+    p.className = "particle";
+
+    p.style.left = Math.random()*100 + "%";
+
+    p.style.animationDuration =
+        (8 + Math.random()*10) + "s";
+
+    p.style.animationDelay =
+        Math.random()*8 + "s";
+
+    p.style.width =
+        (1 + Math.random()*3) + "px";
+
+    p.style.height =
+        p.style.width;
+
+    document.body.appendChild(p);
+}
+
+</script>
+
+</body>
+</html>
